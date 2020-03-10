@@ -3,10 +3,5 @@ import React from 'react';
 import { Title } from './styles';
 
 export default function Main() {
-    return (
-        <Title>
-            Maaain
-            <small>Small Maaain</small>
-        </Title>
-    );
+    return <Title>Ufrilla</Title>;
 }
