@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 
-import { Redirect, withRouter } from 'react-router-dom';
-
 import { Container, LogInDiv, Title, Form, SubmitButton } from './styles';
 
 export default class FirstPage extends Component {
     handleSubmit = e => {
-        this.props.history.push('repository');
+        this.props.history.push('dashboard');
     };
     render() {
         return (
