@@ -4,7 +4,18 @@ import { Container, ReadDiv } from './styles';
 
 import Dashboard from '../Dashboard/';
 
+import api from '../../services/api';
+
 export default class readVagas extends Component {
+    async getPosts() {
+        const response = await api.get('/job');
+        console.log(response.data);
+    }
+
+    componentDidMount() {
+        this.getPosts();
+    }
+
     render() {
         return (
             <Container>
