@@ -5,9 +5,10 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import FirstPage from './pages/FirstPage';
 import Dashboard from './pages/Dashboard';
-import makeVagas from './pages/makeVagas';
-import editVagas from './pages/editVagas';
-import readVagas from './pages/readVagas';
+import makeVagas from './pages/MakeVagas';
+import editVagas from './pages/EditVagas';
+import readVagas from './pages/ReadVagas';
+import freelancers from './pages/Freelancers';
 
 export default function Routes() {
     return (
@@ -18,6 +19,7 @@ export default function Routes() {
                 <Route path="/makeVagas" component={makeVagas} />
                 <Route path="/editVagas" component={editVagas} />
                 <Route path="/readVagas" component={readVagas} />
+                <Route path="/freelancers" component={freelancers} />
             </Switch>
         </BrowserRouter>
     );

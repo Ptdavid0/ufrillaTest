@@ -21,6 +21,9 @@ export default class Dashboard extends Component {
                             <li>
                                 <Link to="/editVagas">Editar Vagas</Link>
                             </li>
+                            <li>
+                                <Link to="/freelancers">Freelancers</Link>
+                            </li>
                         </ul>
                     </nav>
                 </header>
