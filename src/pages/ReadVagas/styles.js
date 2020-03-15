@@ -2,20 +2,20 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: row;
-    position: relative;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
 `;
 
 export const ReadDiv = styled.div`
     display: flex;
     flex-direction: row;
     background-color: white;
-    width: 100vw;
-    margin: 50px;
+    margin: 2vh;
     border-radius: 15px;
     padding: 10px;
 
     h1 {
-        color: cornflowerblue;
+        color: #479fd8;
     }
 `;

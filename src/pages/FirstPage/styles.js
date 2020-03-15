@@ -15,7 +15,7 @@ export const LogInDiv = styled.div`
     min-width: 500px;
     background-color: white;
     border-radius: 5px;
-    color: cornflowerblue;
+    color: #479fd8;
     padding: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
@@ -62,7 +62,7 @@ export const Form = styled.form`
 export const SubmitButton = styled.button.attrs({
     type: 'submit',
 })`
-    background-color: cornflowerblue;
+    background-color: #479fd8;
     padding: 10px 15px;
     color: white;
     border-radius: 4px;

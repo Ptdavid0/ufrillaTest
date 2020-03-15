@@ -14,7 +14,7 @@ export default createGlobalStyle`
     }
 
     body{
-        background:cornflowerblue;
+        background:#479fd8;
         -webkit-font-smoothing:antialiased !important;
     }
 

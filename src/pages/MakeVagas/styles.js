@@ -2,22 +2,23 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
 `;
 
 export const MakeDiv = styled.div`
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 100vw;
-    margin: 50px;
+    margin: 2vh;
     border-radius: 15px;
     padding: 10px;
+    height: 100vh;
 
-    p {
-        font-size: 60px;
-        color: cornflowerblue;
-    }
+    font-size: 5vh;
+    text-decoration-line: underline;
+    color: #479fd8;
 `;
 
 export const Form = styled.form`
@@ -39,7 +40,7 @@ export const Form = styled.form`
 export const SubmitButton = styled.button.attrs({
     type: 'submit',
 })`
-    background-color: cornflowerblue;
+    background-color: #479fd8;
     padding: 10px 15px;
     color: white;
     border-radius: 4px;

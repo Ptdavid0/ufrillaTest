@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 import { Container, EditDiv, Form, SubmitButton } from './styles';
 
-import Dashboard from '../Dashboard/';
+// import Dashboard from '../Dashboard';
+import NavBar from '../NavBar';
 
 import api from '../../services/api';
 
@@ -41,7 +42,7 @@ export default class editVagas extends Component {
     render() {
         return (
             <Container>
-                <Dashboard />
+                <NavBar />
                 <EditDiv>
                     <p>EDITAR VAGA</p>
                     <Form onSubmit={this.handleSubmit.bind(this)}>

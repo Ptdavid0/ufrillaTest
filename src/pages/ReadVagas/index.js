@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Container, ReadDiv } from './styles';
 
-import Dashboard from '../Dashboard/';
+import NavBar from '../NavBar';
 
 import api from '../../services/api';
 
@@ -13,7 +13,6 @@ import 'react-calendar/dist/Calendar.css';
 export default class readVagas extends Component {
     state = {
         date: new Date(),
-        activeStartDate: new Date(),
     };
 
     async getPosts() {
@@ -25,22 +24,12 @@ export default class readVagas extends Component {
         this.getPosts();
     }
 
-    // tileContent = ({ activeStartDate, date, view }) => {
-    //     console.log(`Date:${date.getDay()}/${date},
-    //     View: ${view} ,
-    //     Active:${activeStartDate} `);
-
-    //     return view === 'month' && date.getDay() === 1 ? (
-    //         <p>It's Sunday!</p>
-    //     ) : null;
-    // };
-
     onChange = date => this.setState({ date });
 
     render() {
         return (
             <Container>
-                <Dashboard />
+                <NavBar />
                 <ReadDiv>
                     {/* <TileContent /> */}
                     <Calendar

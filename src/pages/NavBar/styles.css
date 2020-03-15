@@ -1,0 +1,56 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #479fd8;
+    box-shadow: 5px 10px 20px rgba(67, 70, 69, 0.609);
+    width: 100vw;
+    height: 6vh;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(78, 78, 78);
+}
+
+img {
+    margin-left: 3vw;
+}
+
+.divLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 8%;
+    width: 50%;
+    font-size: 2vh;
+}
+
+.myLinks {
+    width: 30%;
+    height: 6vh;
+    text-align: center;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divMiddle {
+    width: 40%;
+}
+
+.divProfile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+    padding-right: 3vw;
+}

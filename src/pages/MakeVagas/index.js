@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Container, MakeDiv, Form, SubmitButton } from './styles';
 
-import Dashboard from '../Dashboard/';
+import NavBar from '../NavBar';
 
 import api from '../../services/api';
 
@@ -57,7 +57,7 @@ export default class makeVagas extends Component {
     render() {
         return (
             <Container>
-                <Dashboard />
+                <NavBar />
                 <MakeDiv>
                     <p>ADICIONAR VAGA</p>
                     <Form onSubmit={this.handleSubmit.bind(this)}>
