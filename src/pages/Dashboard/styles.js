@@ -31,9 +31,9 @@ export const Container = styled.div`
         /* width: 100vw; */
         text-align: center;
         font-weight: normal;
-        line-height: 50px;
-        font-size: 20px;
-        letter-spacing: 2px;
+        line-height: 5vh;
+        font-size: 2vh;
+        letter-spacing: 0.2vh;
         background-color: #34363a;
         border-bottom: 1px solid black;
     }
