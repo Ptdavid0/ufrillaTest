@@ -40,6 +40,15 @@ export default class makeVagas extends Component {
         e.preventDefault();
         console.log(this.state);
         this.sendData();
+
+        alert(`Vaga Criada:
+        - Quantidade:${this.state.quantidade}
+        - Valor:${this.state.valor}
+        - Discricao:${this.state.discricao}
+        - Inicio do Trabalho:${this.state.inicio_do_Trabalho}
+        - Fim do Trabalho:${this.state.fim_do_Trabalho}
+        - Tipo do freelancer:${this.state.freelancerType}`);
+
         this.setState({
             quantidade: '',
             valor: '',
@@ -77,7 +86,7 @@ export default class makeVagas extends Component {
                         />
                         <input
                             type="text"
-                            placeholder="Discricao"
+                            placeholder="Discrição"
                             name="discricao"
                             value={this.state.discricao}
                             onChange={this.handleChange.bind(this)}

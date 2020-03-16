@@ -21,13 +21,16 @@ export default class NavBar extends Component {
                     </div>
                     <div className="divLinks">
                         <div className="myLinks">
-                            <Link to="/readVagas">Minhas Vagas</Link>
+                            <Link to="/readVagas">Calendario</Link>
                         </div>
                         <div className="myLinks">
                             <Link to="/makeVagas">Criar Vagas</Link>
                         </div>
                         <div className="myLinks">
                             <Link to="/editVagas">Editar Vagas</Link>
+                        </div>
+                        <div className="myLinks">
+                            <Link to="/cardsPage">Minhas Vagas</Link>
                         </div>
                     </div>
                     <div className="divMiddle"></div>

@@ -1,0 +1,36 @@
+Resultado:
+
+1) eu como contratante, PRECISO criar uma vaga  PARA disponibilizar essa oferta para os freelancers.
+
+-> Tela para cadastro de novas vagas esta operacional, envio e front-end realizados. Pode ser acessado por '/makeVaga'
+
+
+
+2) eu como contratante, PRECISO visualizar minhas vagas abertas em um calendário
+
+-> Tela de visualizacao esta realizando a busca na Api, atraves da rota passada. Calendario funcional, entretanto, nao consegui incorporar as vagas ao calendario. Em contra-proposta, na rota'/cardsPage' esta uma tela de vizualizacao com cards para cada vaga, trabalhando sincronizadamente com o banco de dados.
+
+
+
+3} eu como contratante, PRECISO editar uma vaga, CASO eu queira alterar algo da mesma.
+
+-> tela para edicao de vaga aberta esta operacional, alteracao e front-end realizados. Pode ser acessado por '/editVaga'
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+-> A parte de usuario(criar/autentificar/token) , eu ainda tenho dificuldade e por isso nao consegui realiza-la ainda!
+
+-> Principais dependencias utilizadas {
+    "axios": "^0.19.2",             ->Interligar com Api
+    "react": "^16.13.0",
+    "react-calendar": "^3.0.0",     ->Calendario na pagina '/readVagas'
+    "react-dom": "^16.13.0",
+    "react-icons": "^3.9.0",        ->Utilizar icones como os da Font Awesome
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "styled-components": "^5.0.1"   -> Utilizacao do CSS em arquivos JS
+    "prettier": "^1.19.1"           -> Organizacao de codigo
+    "eslint": "^6.8.0",             -> Organizacao de codigo
+}
