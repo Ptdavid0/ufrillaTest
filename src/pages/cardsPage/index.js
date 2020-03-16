@@ -16,13 +16,12 @@ export default class cardsPage extends Component {
         await this.setState({
             vagas: response.data,
         });
-        console.log(this.state.vagas);
     }
 
     render() {
         const vagas = this.state.vagas.map(vaga => {
             return (
-                <Card>
+                <Card key={vaga.id}>
                     <UpPart>
                         <h1>Vaga</h1>
                     </UpPart>
@@ -60,7 +59,6 @@ export default class cardsPage extends Component {
                 </Card>
             );
         });
-        // console.log(this.state.vagas);
         return (
             <Container>
                 <NavBar />

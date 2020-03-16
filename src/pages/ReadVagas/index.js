@@ -4,7 +4,7 @@ import { Container, ReadDiv } from './styles';
 
 import NavBar from '../NavBar';
 
-import api from '../../services/api';
+// import api from '../../services/api';
 
 import Calendar from 'react-calendar';
 
@@ -15,14 +15,13 @@ export default class readVagas extends Component {
         date: new Date(),
     };
 
-    async getPosts() {
-        const response = await api.get('/job');
-        console.log(response.data);
-    }
+    // async getPosts() {
+    //     const response = await api.get('/job');
+    // }
 
-    componentDidMount() {
-        this.getPosts();
-    }
+    // componentDidMount() {
+    //     this.getPosts();
+    // }
 
     onChange = date => this.setState({ date });
 
@@ -31,12 +30,10 @@ export default class readVagas extends Component {
             <Container>
                 <NavBar />
                 <ReadDiv>
-                    {/* <TileContent /> */}
                     <Calendar
                         onChange={this.onChange}
                         value={this.state.date}
                     />
-                    {/* <h1>Hello Read Div</h1> */}
                 </ReadDiv>
             </Container>
         );

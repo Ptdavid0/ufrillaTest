@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import { Container, EditDiv, Form, SubmitButton } from './styles';
 
-// import Dashboard from '../Dashboard';
 import NavBar from '../NavBar';
 
 import api from '../../services/api';

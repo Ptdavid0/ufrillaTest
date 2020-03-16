@@ -10,7 +10,6 @@ export const Container = styled.div`
 export const LogInDiv = styled.div`
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     min-height: 500px;
     min-width: 500px;
     background-color: white;
